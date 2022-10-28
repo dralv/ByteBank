@@ -71,10 +71,18 @@ using ByteBank.Titular;
 //Console.WriteLine(conta3.NumeroAgencia);
 //Console.WriteLine(conta3.Conta);
 
-ContaCorrente conta4 = new ContaCorrente(18,"1010-X");
-conta4.SetSaldo(500);
-conta4.Titular = new Cliente();
+//ContaCorrente conta4 = new ContaCorrente(18,"1010-X");
+//conta4.SetSaldo(500);
+//conta4.Titular = new Cliente();
 
-Console.WriteLine(conta4.GetSaldo());
-Console.WriteLine(conta4.NumeroAgencia);
+//Console.WriteLine(conta4.GetSaldo());
+//Console.WriteLine(conta4.NumeroAgencia);
+
+
+ContaCorrente conta5 = new ContaCorrente(283,"1234-X");
+Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+
+ContaCorrente conta6 = new ContaCorrente(284, "9874-z");
+Console.WriteLine(ContaCorrente.TotalDeContasCriadas); // é preciso referenciar a classe e não o objeto 
+
 

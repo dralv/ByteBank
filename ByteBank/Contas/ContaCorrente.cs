@@ -9,6 +9,7 @@ namespace ByteBank.Contas
 {
     public class ContaCorrente
     {
+        public static int TotalDeContasCriadas { get; private set; } //propriedade da classe e não mais dos objetos instanciados 
         private int numeroAgencia;
         public int NumeroAgencia
         {
@@ -79,6 +80,7 @@ namespace ByteBank.Contas
         {
             this.NumeroAgencia = numeroAgencia;
             this.Conta = numeroConta;
+            TotalDeContasCriadas++;
         }
 
         
