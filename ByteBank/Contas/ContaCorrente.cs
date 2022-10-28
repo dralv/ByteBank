@@ -13,7 +13,7 @@ namespace ByteBank.Contas
         public int NumeroAgencia
         {
             get { return this.numeroAgencia; }
-            set 
+            private set 
             {
                 if(value>0)
                     this.numeroAgencia = value; 
@@ -74,5 +74,13 @@ namespace ByteBank.Contas
         {
             return this.saldo;
         }
+
+        public ContaCorrente(int numeroAgencia,string numeroConta)
+        {
+            this.NumeroAgencia = numeroAgencia;
+            this.Conta = numeroConta;
+        }
+
+        
     }
 }
